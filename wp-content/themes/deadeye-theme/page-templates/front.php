@@ -23,7 +23,16 @@ get_header(); ?>
 	</div>
 
 </header>
-
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#0">Home</a></li>
+    <li><a href="#0">Features</a></li>
+    <li class="disabled">Gene Splicing</li>
+    <li>
+      <span class="show-for-sr">Current: </span> Cloning
+    </li>
+  </ul>
+</nav>
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <section class="intro" role="main">
