@@ -11,7 +11,7 @@ get_header(); ?>
 			<section class="stargazers">
 			</section>
 			<section class="twitter">
-				<a href="https://twitter.com/olefredrik">@deadeyebbq</a>
+				<a href="https://twitter.com/@DeadEyeBBQSauce">@deadeyebbq</a>
 			</section>
 		</div>
 	</div>
@@ -101,7 +101,6 @@ get_header(); ?>
 	</div>
 
 </section>
-
 
 
 <?php get_footer();
