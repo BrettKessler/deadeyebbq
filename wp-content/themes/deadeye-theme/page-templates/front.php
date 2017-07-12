@@ -84,6 +84,40 @@ get_header(); ?>
 		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
 	</div>
 </section>
+<div class="flex-card-example">
+	<div class="card">
+		<img src="https://placeimg.com/300/200/people">
+		<div class="card-content">
+			<h4>Recipe Name</h4>
+			<p>Recipe Explanation</p>
+			<a href="#" class="button">Click for recipe</a>
+		</div>
+	</div>
+	<div class="card">
+		<img src="https://placeimg.com/300/200/people">
+		<div class="card-content">
+			<h4>Recipe Name</h4>
+			<p>Recipe Explanation</p>
+			<a href="#" class="button">Click for recipe</a>
+		</div>
+	</div>
+	<div class="card">
+		<img src="https://placeimg.com/300/200/people">
+		<div class="card-content">
+			<h4>Recipe Name</h4>
+			<p>Recipe Explanation</p>
+			<a href="#" class="button">Click for recipe</a>
+		</div>
+	</div>
+	<div class="card">
+		<img src="https://placeimg.com/300/200/people">
+		<div class="card-content">
+			<h4>Recipe Name</h4>
+			<p>Recipe Explanation</p>
+			<a href="#" class="button">Click for recipe</a>
+		</div>
+	</div>
+</div>
 <div class="row">
 	<div class="flex-video medium-3 columns responsive-embed">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/ABWs11ZxyCk" frameborder="0" allowfullscreen></iframe>
