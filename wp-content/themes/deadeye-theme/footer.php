@@ -25,14 +25,6 @@
 		</div><!-- Close off-canvas content -->
 	</div><!-- Close off-canvas wrapper -->
 <?php endif; ?>
-<ul>
-	<li>item</li>	
-	<li>item</li>	
-	<li>item</li>	
-	<li>item</li>	
-	<li>item</li>	
-</ul>
-
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>

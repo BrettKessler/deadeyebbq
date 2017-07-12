@@ -4,9 +4,14 @@ Template Name: Front
 */
 get_header(); ?>
 
+<ul class="breadcrumbs">
+    <li><a href="#0">Home</a></li>
+    <li><a href="#0">About Us</a></li>
+    <li><a href="#0">Products</a></li>
+    <li><a href="#0">Recipes</a></li>
+  </ul>
 <header class="front-hero" role="banner">
 	<div class="marketing">
-
 		<div class="watch">
 			<section class="stargazers">
 			</section>
@@ -15,18 +20,23 @@ get_header(); ?>
 			</section>
 		</div>
 	</div>
-
 </header>
 <nav aria-label="You are here:" role="navigation">
-  <ul class="breadcrumbs">
-    <li><a href="#0">Home</a></li>
-    <li><a href="#0">Features</a></li>
-    <li class="disabled">Gene Splicing</li>
-    <li>
-      <span class="show-for-sr">Current: </span> Cloning
-    </li>
-  </ul>
 </nav>
+<div class="row">
+	<div class="flex-video medium-3 columns responsive-embed">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ABWs11ZxyCk" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="flex-video small-3 columns responsive-embed">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ABWs11ZxyCk" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="flex-video small-3 columns responsive-embed">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ABWs11ZxyCk" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="flex-video small-3 columns responsive-embed">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ABWs11ZxyCk" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <section class="intro" role="main">
@@ -101,6 +111,15 @@ get_header(); ?>
 	</div>
 
 </section>
+<p><a data-open="exampleModal1">Click Here For a Coupon Code!</a></p>
 
+<div class="reveal" id="exampleModal1" data-reveal>
+  <h1>Awesome. I Have It.</h1>
+  <p class="lead">Your couch. It is mine.</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
 <?php get_footer();
