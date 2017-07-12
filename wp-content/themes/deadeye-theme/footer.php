@@ -10,9 +10,14 @@
 
 ?>
 
-		</section>
+</section>
 		<div class="footer-container" data-sticky-footer>
 			<footer class="footer">
+				<p>this is where the footer will go</p>
+				<section class="twitter">
+					<a href="https://twitter.com/@DeadEyeBBQSauce">@deadeyebbq</a>
+				</section>
+
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
