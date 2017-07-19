@@ -36,9 +36,10 @@
 			</div>
 		</div>
 		<nav class="site-navigation top-bar" role="navigation">
+			<button id="order-now-button">order now</button>
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<img src="wp-content/uploads/2017/deadeye/deadeye-logo.png">
 				</div>
 			</div>
 			<div class="top-bar-right">

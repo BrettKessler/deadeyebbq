@@ -42,6 +42,105 @@
 //  37. Top Bar
 
 @import '../../components/foundation-sites/scss/util/util';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+ul.orbit-container{
+  height: 400px;
+  max-width: 75rem;
+  margin: auto;
+  background-color: black;
+
+    img{
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      max-height: 400px;
+    }
+}
+nav.top-bar {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  .top-bar-right {
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+    a {
+      color: gray;
+    }
+    ul {
+    }
+  }
+   #order-now-button {
+      border-radius: 5px;
+      padding: 15px 40px;
+      color: white;
+      font-weight: bold;
+      right: 20px;
+      bottom: 20px;
+      background-color: #ff3500; 
+      float: right;
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+  .menu > li > a {
+    display: block;
+    padding: 0.7rem 0 0.7rem 2rem;
+    line-height: 1;
+  }
+
+}
+#tab-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  p {
+    float: right;
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  .tab-content {
+    padding: 0 !important;
+    position: relative !important;
+
+  }
+  img {
+    float: left;
+    max-width: 50%;
+  }
+  button {
+    position: absolute;
+    border-radius: 5px;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+    right: 20px;
+    bottom: 20px;
+    background-color: red;
+
+  }
+}
+.flex-card-example.recipe {
+  max-width: 1200px;
+  margin: auto;
+  .card {
+    width: 49%;
+  }
+}
+
+#video-container .flex-video{
+  height: 0;
+  padding-bottom: 21%;
+  position: relative;
+}
+
+#video-container .flex-video > iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 // 1. Global
 // ---------
@@ -114,7 +213,7 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
+    'h2': ('font-size': 4),
     'h3': ('font-size': 19),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
@@ -122,7 +221,7 @@ $header-styles: (
   ),
   medium: (
     'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
+    'h2': ('font-size': 4),
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
@@ -449,7 +548,7 @@ $maincontent-class: 'off-canvas-content';
 
 $orbit-bullet-background: $medium-gray;
 $orbit-bullet-background-active: $dark-gray;
-$orbit-bullet-diameter: 1.2rem;
+$orbit-bullet-diameter: 0.5rem;
 $orbit-bullet-margin: 0.1rem;
 $orbit-bullet-margin-top: 0.8rem;
 $orbit-bullet-margin-bottom: 0.8rem;
@@ -458,6 +557,8 @@ $orbit-caption-padding: 1rem;
 $orbit-control-background-hover: rgba($black, 0.5);
 $orbit-control-padding: 1rem;
 $orbit-control-zindex: 10;
+
+
 
 // 26. Pagination
 // --------------
@@ -613,7 +714,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: none;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
