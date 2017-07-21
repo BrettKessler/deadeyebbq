@@ -25,7 +25,12 @@
 	<?php endif; ?>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
-
+	<div class="social-media-icons" id="social1">
+					<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="http://www.instagram.com/deadeyebbq/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://www.twitter.com/deadeyebbqsauce?lang=eng"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/DeadEyeBBQ"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				</div>
 	<header class="site-header" role="banner">
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
@@ -36,10 +41,12 @@
 			</div>
 		</div>
 		<nav class="site-navigation top-bar" role="navigation">
+
+			
 			<button id="order-now-button">order now</button>
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<img src="wp-content/uploads/2017/deadeye/deadeye-logo.png">
+					<img src = '<?php bloginfo('template_directory'); ?>/assets/images/components/deadeye-logo.png' />
 				</div>
 			</div>
 			<div class="top-bar-right">

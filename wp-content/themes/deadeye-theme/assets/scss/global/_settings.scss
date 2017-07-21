@@ -43,6 +43,29 @@
 
 @import '../../components/foundation-sites/scss/util/util';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:900');
+
+
+//custom-post-pages
+.thumbnail {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+
+
+//row
+.page-width{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row{
+  max-width: 100% !important;
+}
+
 ul.orbit-container{
   height: 400px;
   max-width: 75rem;
@@ -56,9 +79,42 @@ ul.orbit-container{
       max-height: 400px;
     }
 }
+#social1 {
+  max-width: 1200px;
+  margin: 20px auto;
+
+  i {
+    float: right;
+    margin-left: 24px;
+    color: darkcyan;
+    font-size: 30px;
+  }
+}
+
+.footer-container {
+  background: #dba96f; /* Old browsers */
+  background: -moz-linear-gradient(top, #545454 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #545454 0%, #000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #545454 0%, #000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.address  {
+  float: left;
+  margin: 20px 0;
+  h5 {
+    color: white;
+  }
+  p {
+    font-size: 13px;
+    color: white;
+    margin-bottom: .5rem;
+    line-height: 1.4rem;
+    text-rendering: optimizeLegibility;
+  }
+}
 nav.top-bar {
   max-width: 1200px;
-  margin: auto;
+  margin: 20px auto;
   position: relative;
   font-family: 'Roboto Slab', serif;
   .top-bar-right {
@@ -82,6 +138,7 @@ nav.top-bar {
       float: right;
       margin-top: 50px;
       text-transform: uppercase;
+      clear: both;
     }
   .menu > li > a {
     display: block;
@@ -139,8 +196,31 @@ nav.top-bar {
   left: 0;
   width: 100%;
   height: 100%;
+  margin: 2%;
 }
-
+.video-button {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: .85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    font-size: .9rem;
+    line-height: 1;
+    cursor: pointer;
+    background-color: #1779ba;
+    color: #fefefe;
+}
+.main-content.page-content {
+  width: 100% !important;
+}
+.footer-font {
+  font-family: 'Alegreya SC', serif;
+  font-size: 41px;
+  text-transform: uppercase;
+}
 
 // 1. Global
 // ---------
@@ -213,7 +293,7 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
-    'h2': ('font-size': 4),
+    'h2': ('font-size': 20),
     'h3': ('font-size': 19),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
@@ -221,7 +301,7 @@ $header-styles: (
   ),
   medium: (
     'h1': ('font-size': 48),
-    'h2': ('font-size': 4),
+    'h2': ('font-size': 20),
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
@@ -679,7 +759,7 @@ $tab-content-padding: 1rem;
 // 34. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: solid 0px $white;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
@@ -713,7 +793,7 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0rem;
 $topbar-background: none;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
